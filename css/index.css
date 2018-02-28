@@ -7,35 +7,52 @@
          url('../fonts/zhanghaishan.ttf') format('truetype'),
          url('../fonts/zhanghaishan.svg#zhanghaishan') format('svg');
    }
-.wrap{
+.indexWrap{
     font-family: zhanghaishan;
 }
-nav{
+.indexWrap nav{
     height:90px;
     padding-top:20px;
     background:url(../img/1.jpg)
 }
-.navbar-header{
+.indexWrap .navbar-header{
     height:70px
 }
-#menu>ul>li>a{
+.indexWrap #menu>ul>li>a{
     color:#fff;
     cursor: pointer
 }
-.searchInput{
+.indexWrap .searchInput{
     margin:10px    
 }
-.inputHidden{
+.indexWrap .inputHidden{
     display:none
 }
-.EmailDivImg{
+.indexWrap .EmailDivImg{
     width:100%
 }
+.indexWrap .EmailDiv{
+    position:relative
+}
+.indexWrap .infoDiv{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.indexWrap .yourName,.indexWrap .telephoneNumber{
+    height:40px;
+    padding:5px;
+    position:relative;
+    border:1px solid #D4C0BC;
+    border-left:none;
+    outline: none;
+}
+
 @media screen and (max-width:767px){
-    nav{
+    .indexWrap nav{
         background:none
     }
-    #menu>ul>li>a{
+    .indexWrap #menu>ul>li>a{
         color:#000
     }
 }
