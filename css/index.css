@@ -1,4 +1,41 @@
-.nav{
-    height:70px;
+@font-face {
+    font-family: 'zhanghaishan';
+    src: url('../fonts/zhanghaishan.eot');
+    src: local('zhanghaishan Regular'),
+         local('zhanghaishan'),
+         url('../fonts/zhanghaishan.woff') format('woff'),
+         url('../fonts/zhanghaishan.ttf') format('truetype'),
+         url('../fonts/zhanghaishan.svg#zhanghaishan') format('svg');
+   }
+.wrap{
+    font-family: zhanghaishan;
+}
+nav{
+    height:90px;
+    padding-top:20px;
     background:url(../img/1.jpg)
+}
+.navbar-header{
+    height:70px
+}
+#menu>ul>li>a{
+    color:#fff;
+    cursor: pointer
+}
+.searchInput{
+    margin:10px    
+}
+.inputHidden{
+    display:none
+}
+.EmailDivImg{
+    width:100%
+}
+@media screen and (max-width:767px){
+    nav{
+        background:none
+    }
+    #menu>ul>li>a{
+        color:#000
+    }
 }

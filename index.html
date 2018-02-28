@@ -10,27 +10,42 @@
 </head>
 <body>
   <div class="wrap">
-    <ndv>
-            <a href="#menu" data-toggle="collapse" class="navbar-toggle">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#menu" data-toggle="collapse" class="navbar-toggle">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <nav id="menu" class="collapse navbar-collapse navbar-left">
-                    <ul class="nav navbar-nav">
-                        <li><a href="">主页</a></li>
-                        <li><a href="">关于我们</a></li>
-                        <li><a href="">我们提供什么</a></li>
-                        <li><a href="">技术支持</a></li>
-                        <li><a href="">联系我们</a></li>
-                        <li><a href=""><img src="img/3.png" alt="searchImg"></a></li>
-                    </ul>
-                </nav>
-    </ndv>
-    
+            </div>
+            <div id="menu" class="collapse navbar-collapse navbar-left">
+                <ul class="nav navbar-nav">
+                    <li><a href="">主页</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">我们提供什么</a></li>
+                    <li><a href="">技术支持</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li class="magnifier">
+                        <a><span class="glyphicon glyphicon-search
+                            "></span></a>
+                    </li>
+                    <li>
+                        <input type="text" class="searchInput inputHidden"
+                        data-search="input"/>
+                        <input type="button" value="查询" class="searchInput inputHidden" data-search="btn"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container EmailDiv">
+        <img src="img/2.jpg" class="EmailDivImg" alt="背景图">
+    </div>
   </div>
-    <script>
-        
-    </script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
