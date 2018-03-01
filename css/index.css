@@ -39,20 +39,54 @@
     top:0;
     left:0;
 }
+.indexWrap .yourNameDiv,.indexWrap .telephoneNumberDiv{
+    border:1px solid #D4C0BC;
+    padding-left:7px;
+    background:#fff;
+    display:inline-block;
+}
 .indexWrap .yourName,.indexWrap .telephoneNumber{
-    height:40px;
+    height:33px;
     padding:5px;
     position:relative;
-    border:1px solid #D4C0BC;
-    border-left:none;
+    border:none;
     outline: none;
+    margin-left:7px
+    
 }
-
+.indexWrap .yourNameDiv:before,.indexWrap .telephoneNumberDiv:before{
+    content:'';
+    display:inline-block;
+    width:1px;
+    height:15px;
+    background:#887770;
+    position:relative;
+    left:26px;
+    top:2px;
+}
+.indexWrap .sendEmailBtnDiv{
+    display:inline-block;
+    background:#0DABDE;
+    padding-right:15px;
+    color:#fff;
+}
+.indexWrap .sendEmailBtn{
+    padding:6px 40px;
+    border:none;
+    outline: none;
+    background:#04C4FF;
+    margin-right:5px;
+}
 @media screen and (max-width:767px){
     .indexWrap nav{
-        background:none
+        background:none;
+        height:30px;
+        padding-top:0;
     }
     .indexWrap #menu>ul>li>a{
         color:#000
+    }
+    .indexWrap .navbar-header{
+        height:48px
     }
 }
