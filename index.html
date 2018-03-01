@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPEhtml>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,12 +21,12 @@
             </div>
             <div id="menu" class="collapse navbar-collapse navbar-left menu">
                 <ul class="nav navbar-nav">
-                    <li><a href="">主页</a></li>
-                    <li><a href="">关于我们</a></li>
-                    <li><a href="">我们提供什么</a></li>
-                    <li><a href="">技术支持</a></li>
-                    <li><a href="">联系我们</a></li>
-                    <li class="magnifier">
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">我们提供什么</a></li>
+                    <li><a href="#">技术支持</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li class="magnifier" onclick = "showSearch()">
                         <a><span class="glyphicon glyphicon-search
                             "></span></a>
                     </li>
@@ -51,7 +51,7 @@
                 <label for="telephoneNumber"><span class="glyphicon glyphicon-earphone"></span></label>
                 <input type="text" class="telephoneNumber" id="telephoneNumber" placeholder="telephone number"/>
             </div>
-            <div class="sendEmailBtnDiv">
+            <div class="sendEmailBtnDiv" data-sendEmail="btn">
                 <input type="button" class="sendEmailBtn" value="S U B S C R I B E">
                 <span class="glyphicon glyphicon-send"></span>
             </div>
@@ -60,6 +60,7 @@
         </div>
     </div>
   </div>
+    
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/ajax.js"></script>
